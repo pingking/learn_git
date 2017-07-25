@@ -22,6 +22,7 @@ int main(void)
 	unsigned char output_o[16];
 	int i;
 	int mode = 0;
+	int flag = 1;
 	unsigned char input[16]= "23456789ABCDEF01";
 	unsigned char key[16]="0123456789ABCDEF";
 	mbedtls_aes_init( &ctx );
@@ -54,7 +55,7 @@ int main(void)
 
 	printf("modefied the first");
 	printf("add in github wed\n");
-	printf("mode = %d",mode);
+	printf("mode = %d, flag = %d \n",mode,flag);
 	return 0;
 
 }
