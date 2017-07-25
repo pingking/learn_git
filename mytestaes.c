@@ -1,12 +1,9 @@
 #include "include/mbedtls/cipher.h"
 #include "include/mbedtls/aes.h"
 #include "include/mbedtls/cipher_internal.h"
-//#include <trace.h>
 #include <string.h>
 #include <stdio.h>
 
-//#define key    "0123456789ABCDEF"
-//#define input  "23456789ABCDEF01"
 void dump_printf(unsigned char *p,int size)
 {
 	int i;
@@ -55,7 +52,7 @@ int main(void)
 	printf("dec  output-o\n");
 	dump_printf(output_o,sizeof(output_o)/sizeof(char));
 
-
+	printf("modefied the first");
 	printf("mode = %d\n ",mode^1);
 	return 0;
 
