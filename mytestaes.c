@@ -53,7 +53,8 @@ int main(void)
 	dump_printf(output_o,sizeof(output_o)/sizeof(char));
 
 	printf("modefied the first");
-	printf("mode = %d\n ",mode^1);
+	printf("add in github wed\n");
+	printf("mode = %d",mode);
 	return 0;
 
 }
